@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <style>
+        body{
+            background-image: url(Wprere.jpeg);
+        }
+        button{
+            text-align: center;
+        }
+        form{
+            background-color: pink;
+            width:300px ;
+            height:100px ;
+            border: 10px solid aqua; ;
+            border-radius: 10px;
+            margin: 230px 500px 250px 500px;
+            padding: 20px 20px 20px 20px;
+        }
+
+    </style>
+    <form action="ILY.html">
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "070908") {
+                document.getElementById("index.html").style.display = "block";
+                window.location.href = 'index.html';
+                document.getElementById("login").style.display = "none";
+            } else {
+                alert("Incorrect password");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h5 style="text-align: center;">Cuman kamu Yang tau passwordnya (clue: ultah)</h5>
+    <p style="text-align: center;"><link rel="stylesheet" href="ILY.html" class="button">
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button></p>
+    </div>
+</form>
+    <div id="ILY" style="display: none;">
+    </div>
+</body>
+</html>
